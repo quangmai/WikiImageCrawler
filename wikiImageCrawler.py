@@ -18,8 +18,8 @@ print "<eecs485_pngs>"
 
 for m in match:
 	xmlImagePrefix = "<eecs485_png_url>"
-	print "http:" + m
 	xmlImageSuffix = "</eecs485_png_url>"
+	print xmlImagePrefix + "http:" + m + xmlImageSuffix
 
 print "</eecs485_pngs>"
 
