@@ -13,7 +13,7 @@ def getPageIDandTitle(key):
 		ON p.page_id = i.page_id
 	WHERE
 		i.inv_word = "%s" and
-		p.page_namespace = 0 limit 10
+		p.page_namespace = 0
 	""" % key
 
 	db = MySQLdb.connect(user="root",passwd="Fgla4Zp0",db="javawiki")
